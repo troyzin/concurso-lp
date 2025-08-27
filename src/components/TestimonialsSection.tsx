@@ -28,7 +28,7 @@ export function TestimonialsSection() {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 fade-in">
+        <div className="text-center mb-16 opacity-0 animate-in fade-in-0 duration-700">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Veja o que nossos <span className="text-success">alunos aprovados</span> estão dizendo
           </h2>
@@ -39,7 +39,7 @@ export function TestimonialsSection() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-card rounded-2xl p-8 shadow-soft border slide-up" style={{animationDelay: `${index * 200}ms`}}>
+            <div key={index} className="bg-card rounded-2xl p-8 shadow-soft border opacity-0 animate-in slide-in-from-bottom-4 duration-700" style={{animationDelay: `${index * 200}ms`}}>
               <div className="space-y-6">
                 <div className="flex items-center justify-between">
                   <div className="flex">

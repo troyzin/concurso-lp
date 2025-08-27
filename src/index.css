@@ -159,12 +159,4 @@ All colors MUST be HSL.
   .hero-text {
     @apply bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent;
   }
-  
-  .fade-in {
-    @apply animate-in fade-in duration-700;
-  }
-  
-  .slide-up {
-    @apply animate-in slide-in-from-bottom-4 duration-700;
-  }
 }

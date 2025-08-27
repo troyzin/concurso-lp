@@ -27,7 +27,7 @@ export function ProblemSection() {
   return (
     <section className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 fade-in">
+        <div className="text-center mb-16 opacity-0 animate-in fade-in-0 duration-700">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Você está cansado de estudar e <span className="text-destructive">não ver resultados?</span>
           </h2>
@@ -39,7 +39,7 @@ export function ProblemSection() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {problems.map((problem, index) => (
-            <div key={index} className="text-center space-y-4 slide-up" style={{animationDelay: `${index * 150}ms`}}>
+            <div key={index} className="text-center space-y-4 opacity-0 animate-in slide-in-from-bottom-4 duration-700" style={{animationDelay: `${index * 150}ms`}}>
               <div className="w-16 h-16 mx-auto bg-destructive/10 rounded-full flex items-center justify-center">
                 <problem.icon className="w-8 h-8 text-destructive" />
               </div>

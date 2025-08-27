@@ -45,7 +45,7 @@ export function FAQSection() {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 fade-in">
+        <div className="text-center mb-16 opacity-0 animate-in fade-in-0 duration-700">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Dúvidas <span className="text-primary">Frequentes</span>
           </h2>
@@ -60,7 +60,7 @@ export function FAQSection() {
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`}
-                className="bg-card rounded-lg border px-6 slide-up"
+                className="bg-card rounded-lg border px-6 opacity-0 animate-in slide-in-from-bottom-4 duration-700"
                 style={{animationDelay: `${index * 100}ms`}}
               >
                 <AccordionTrigger className="text-left text-lg font-semibold hover:no-underline py-6">
