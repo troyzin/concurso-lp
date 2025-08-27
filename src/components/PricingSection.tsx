@@ -72,8 +72,7 @@ export function PricingSection() {
   return (
     <section className="py-20 section-gradient">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 animate-fade-in"
-             style={{ animation: 'fadeIn 0.7s ease-out forwards' }}>
+        <div className="text-center mb-16 opacity-0 animate-in fade-in-0 duration-700">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Escolha o Plano Ideal para sua <span className="hero-text">Aprovação</span>
           </h2>
@@ -91,11 +90,7 @@ export function PricingSection() {
 
         <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {plans.map((plan, index) => (
-            <div key={index} className={`relative bg-white rounded-2xl shadow-soft border-2 transition-all duration-300 hover:shadow-strong ${plan.popular ? 'border-cta scale-105' : 'border-border'}`} 
-                 style={{
-                   animation: `slideUp 0.7s ease-out ${index * 200}ms forwards`,
-                   opacity: 0
-                 }}>
+            <div key={index} className={`relative bg-white rounded-2xl shadow-soft border-2 transition-all duration-300 hover:shadow-strong opacity-0 animate-in slide-in-from-bottom-4 duration-700 ${plan.popular ? 'border-cta scale-105' : 'border-border'}`} style={{animationDelay: `${index * 200}ms`}}>
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                   <div className="bg-cta text-cta-foreground px-6 py-2 rounded-full font-semibold text-sm">

@@ -7,8 +7,7 @@ export function HeroSection() {
       <div className="container mx-auto px-4 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
-          <div className="space-y-8 animate-fade-in"
-               style={{ animation: 'fadeIn 0.7s ease-out forwards' }}>
+          <div className="space-y-8 opacity-0 animate-in fade-in duration-700">
             <div className="space-y-4">
               <h1 className="text-4xl md:text-6xl font-bold leading-tight">
                 Passe no seu <span className="hero-text">Concurso Público</span>{" "}
@@ -57,8 +56,7 @@ export function HeroSection() {
           </div>
 
           {/* Hero Image */}
-          <div className="relative animate-slide-up"
-               style={{ animation: 'slideUp 0.7s ease-out 0.2s forwards', opacity: 0 }}>
+          <div className="relative opacity-0 animate-in slide-in-from-bottom-4 duration-700">
             <img
               src={heroImage}
               alt="Estudantes preparando-se para concursos públicos com sucesso"

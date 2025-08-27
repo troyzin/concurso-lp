@@ -15,8 +15,7 @@ export function FinalCTASection() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-4xl mx-auto space-y-8">
           {/* Urgency Timer */}
-          <div className="bg-cta/20 border border-cta/30 rounded-lg p-6 max-w-2xl mx-auto animate-fade-in"
-               style={{ animation: 'fadeIn 0.7s ease-out forwards' }}>
+          <div className="bg-cta/20 border border-cta/30 rounded-lg p-6 max-w-2xl mx-auto opacity-0 animate-in fade-in-0 duration-700">
             <div className="flex items-center justify-center space-x-2 mb-4">
               <Clock className="w-6 h-6 text-cta" />
               <span className="text-cta font-bold text-lg">OFERTA TERMINA EM:</span>
@@ -38,8 +37,7 @@ export function FinalCTASection() {
           </div>
 
           {/* Main Headline */}
-          <div className="space-y-6 animate-slide-up"
-               style={{ animation: 'slideUp 0.7s ease-out 0.2s forwards', opacity: 0 }}>
+          <div className="space-y-6 opacity-0 animate-in slide-in-from-bottom-4 duration-700">
             <h2 className="text-4xl md:text-6xl font-bold leading-tight">
               Sua Aprovação Começa <span className="text-cta">AGORA</span>
             </h2>

@@ -40,8 +40,7 @@ export function SolutionSection() {
     <section className="py-20 bg-gradient-to-br from-primary/5 to-success/5">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-16 animate-fade-in"
-             style={{ animation: 'fadeIn 0.7s ease-out forwards' }}>
+        <div className="text-center mb-16 opacity-0 animate-in fade-in-0 duration-700">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             O Sistema que vai <span className="hero-text">Revolucionar</span> seus Estudos
           </h2>
@@ -54,11 +53,7 @@ export function SolutionSection() {
         {/* Benefits Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {benefits.map((benefit, index) => (
-            <div key={index} className="text-center space-y-4"
-                 style={{ 
-                   animation: `slideUp 0.7s ease-out ${index * 150}ms forwards`,
-                   opacity: 0
-                 }}>
+            <div key={index} className="text-center space-y-4 opacity-0 animate-in slide-in-from-bottom-4 duration-700" style={{animationDelay: `${index * 150}ms`}}>
               <div className="w-16 h-16 mx-auto bg-success/10 rounded-full flex items-center justify-center">
                 <benefit.icon className="w-8 h-8 text-success" />
               </div>
@@ -70,8 +65,7 @@ export function SolutionSection() {
 
         {/* Features List */}
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6 animate-fade-in"
-               style={{ animation: 'fadeIn 0.7s ease-out forwards' }}>
+          <div className="space-y-6 opacity-0 animate-in fade-in-0 duration-700">
             <h3 className="text-2xl font-bold mb-6">O que você vai receber:</h3>
             <div className="space-y-4">
               {features.map((feature, index) => (
@@ -83,8 +77,7 @@ export function SolutionSection() {
             </div>
           </div>
 
-          <div className="space-y-8 animate-slide-up"
-               style={{ animation: 'slideUp 0.7s ease-out 0.2s forwards', opacity: 0 }}>
+          <div className="space-y-8 opacity-0 animate-in slide-in-from-bottom-4 duration-700">
             <div className="bg-white rounded-2xl p-8 shadow-strong border">
               <div className="text-center space-y-4">
                 <div className="text-4xl font-bold text-primary">15.000+</div>
