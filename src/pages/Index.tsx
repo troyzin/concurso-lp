@@ -15,7 +15,7 @@ const Index = () => {
       <TestimonialsSection />
       <PricingSection />
       <FAQSection />
-      <FinalCTASection />
+      
     </div>
   );
 };
